@@ -1,26 +1,7 @@
 <div class='form center'>
 <?php
 $mankind = Mankind::getInstance();
-
 $people = Mankind::getPeople();
-/*
-echo "_______<pre>";                  
-print_r($people);
-echo "</pre>";
-*/
-/*
-if(isset($_GET["id"])){
-    $id = (int)$_GET["id"];
-    $person = Mankind::getPerson($id);
-    echo Template::div("start_id");
-    foreach ($person as $personItem){   
-        echo Template::items($personItem, "id");
-    }
-    $birth_date = Mankind::$people[$id]->birth_date;
-    echo Mankind::getPersonAgeInDays($birth_date);
-    Template::div("end");
-}
-*/
 foreach ($people as $key => $person){
     
         $row_i = 1;
@@ -53,12 +34,6 @@ foreach ($people as $key => $person){
 Template::items("percentage of Men:", "id");
 Template::items(Mankind::getMenPercentage(), "id");
 Template::items("%", "id");
-/*echo "_______<pre>";
-                    
-                    print_r($mankind->getPerson(123));
-                    echo "</pre>";*/
-//echo "getPerson:".$mankind->getPerson(123);
-class Person {
     public $id;
     public $name;
     public $surname;
