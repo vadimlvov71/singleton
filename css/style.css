@@ -1,0 +1,20 @@
+.start{
+        background: #fff;
+        border-bottom: 1px solid #ccc;
+        padding:5px 11px;
+    }
+    .start_id{
+        background: #ecdaca;
+        padding:5px 11px;
+    }
+    .center{
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .form{
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding:4px 10px;
+        text-align: left;
+        width: 400px;
+    }
